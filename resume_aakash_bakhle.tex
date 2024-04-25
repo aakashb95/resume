@@ -100,9 +100,26 @@
 
 %==== Experience ====%
 \header{Experience}
+
+\vspace{1mm}
+\textbf{Nintee} \hfill Pune\\
+\textit{Software Engineer} \hfill Jan 2023 - Present\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+    \item Created \textbf{content creation pipelines} for our apps that helped learn new words and converted books into an engaging format. These consisted of multiple prompts using \textbf{GPT-4}, generating quizzes based on a single word, active learning based on a book name. Used \textbf{Claude Opus as a quality control analyst} to review and modify content.
+    \item Worked extensively on the \textbf{backend of the Nintee app}. The app helped users build or break habits with the help of a chatbot and a social feed. Designed database models, background processing via RQ workers. Proactively learnt and setup a \textbf{TDD} culture in the Engineering team.
+    \item Designed the \textbf{Nintee Bot on Discord} to assess, breakdown and respond with an actionable plan based on the challenge mentioned by the User. The users would also get \textbf{contextual reminders} that were designed to be nudges.
+    \item Created a health search engine based on \textbf{150k minutes} content from 6 YouTube channels. Used Apache Airflow for fetching new vidoes everyday and processing into vectors. Progress was tracked on Postgres and vectors were stored on Pinecone. The service was integrated into the then Nintee website and would be later included in the Discord Bot via commands.
+          % 	Entities and relations are stored in graph database.
+    % \item Implemented perspective based sentiment analysis using Zero Shot Learning. Explanation can be found \href{ https://twitter.com/aakashb_95/status/1491459132897263617?s=20&t=wXTHKhBcILYE4LebSDFZlQ}{here}.
+          % 	\item Trained a Named Entity Recognition model using SpaCy. Used RoBERTa-base model on a \textbf{custom dataset in BIO format to achieve an F1 score of 84.9\%} on 20 tags (Ontonotes5.0 + two custom tags).
+\end{itemize}
+
+\vspace*{2mm}
+
 \vspace{1mm}
 \textbf{Centre for Development of Advanced Computing (C-DAC)} \hfill Pune\\
-\textit{Project Engineer (NLP R\&D) - Applied AI Group} \hfill Mar 2021 - Present\\
+\textit{Project Engineer (NLP R\&D) - Applied AI Group} \hfill Mar 2021 - Jan 2023\\
 \vspace{-1mm}
 \begin{itemize} \itemsep 1pt
     \item Worked on end-to-end Coreference Resolution on English texts using SpanBERT. Wrote cluster head finding algorithm and resolution logic to handle cataphora and anaphora in input text.
@@ -110,7 +127,7 @@
     \item Generated synthetic data catering to Indian demography, trained \href{https://github.com/anhaidgroup/deepmatcher}{DeepMatcher} on said data to identify potential duplicates in real-world data. \textbf{Reduced comparisons by 98\%} by using phonetic similarity and blocking mechanisms.
     \item Working on end-to-end 360-degree profiling of person entities from unstructured text. Using BERT based model for relation extraction, building custom dataset for said task.
           % 	Entities and relations are stored in graph database.
-    \item Implemented perspective based sentiment analysis using Zero Shot Learning. Explanation can be found \href{ https://twitter.com/aakashb_95/status/1491459132897263617?s=20&t=wXTHKhBcILYE4LebSDFZlQ}{here}.
+    % \item Implemented perspective based sentiment analysis using Zero Shot Learning. Explanation can be found \href{ https://twitter.com/aakashb_95/status/1491459132897263617?s=20&t=wXTHKhBcILYE4LebSDFZlQ}{here}.
           % 	\item Trained a Named Entity Recognition model using SpaCy. Used RoBERTa-base model on a \textbf{custom dataset in BIO format to achieve an F1 score of 84.9\%} on 20 tags (Ontonotes5.0 + two custom tags).
 \end{itemize}
 
@@ -134,33 +151,33 @@ PG Diploma Artificial Intelligence - \textit{Grade: A} \hfill Feb 2020 - Feb 202
 B.E. Computer Engineering - \textit{72\%} \hfill Aug 2013 - Jul 2017\\
 \vspace{2mm}
 
-\header{Projects}
+% \header{Projects}
 
-% ----------------------------
+% % ----------------------------
 
-{\textbf{Cancer Detection using Gene Expression}}
-%{\sl ESP8266, C++, Arduino IDE} \\
-\begin{itemize} \itemsep 1pt
-          % \item Analyzed gene expression sequences from The Cancer Genome Atlas (TCGA) database for 33 different Cancer types and Solid Tissue Normals.
-    \item Analyzed and batch processed zip files from The Cancer Genome Atlas (TCGA) database using python scripts to create a csv file containing \textbf{60,000 features and 11,000 rows}, where each feature represented a unique gene and each row was a unique patient.
-          % Performed EDA, tested hypothesis to find relations between a particular gene and cancer type. 
-          % % \item Obtained insights about gene behaviour/activity-inactivity and validated existing facts(one to many relation of genes to cancer) using statistical techniques.
-          % \item Reduced features using PCA, Cosine Similarity and UMAP.
-    \item Designed a voting classifier based on PCA+CNN, Cosine Similarity+XGBoost, UMAP+LGBM to obtain a robust binary classifier which had an \textbf{f1-score of 0.98} and \textbf{accuracy of 0.97} .
-          \\
-\end{itemize}
-\vspace*{2mm}
+% {\textbf{Cancer Detection using Gene Expression}}
+% %{\sl ESP8266, C++, Arduino IDE} \\
+% \begin{itemize} \itemsep 1pt
+%           % \item Analyzed gene expression sequences from The Cancer Genome Atlas (TCGA) database for 33 different Cancer types and Solid Tissue Normals.
+%     \item Analyzed and batch processed zip files from The Cancer Genome Atlas (TCGA) database using python scripts to create a csv file containing \textbf{60,000 features and 11,000 rows}, where each feature represented a unique gene and each row was a unique patient.
+%           % Performed EDA, tested hypothesis to find relations between a particular gene and cancer type. 
+%           % % \item Obtained insights about gene behaviour/activity-inactivity and validated existing facts(one to many relation of genes to cancer) using statistical techniques.
+%           % \item Reduced features using PCA, Cosine Similarity and UMAP.
+%     \item Designed a voting classifier based on PCA+CNN, Cosine Similarity+XGBoost, UMAP+LGBM to obtain a robust binary classifier which had an \textbf{f1-score of 0.98} and \textbf{accuracy of 0.97} .
+%           \\
+% \end{itemize}
+% \vspace*{2mm}
 
-%----------------- CMM --------------------
-\href{https://github.com/aakashb95/car-detection}{\textbf{Car make and model detection}}
-%{\sl FastAi, PyTorch} 
-%\hfill \url{https://github.com/aakashb95/car-detection}\\
-\begin{itemize} \itemsep 1pt
-    \item Built an image classification model using FastAi to detect make and model of a car based on Stanford Car dataset consisting of 16000 images of 196 different classes.
-          % \item Model trained on the Stanford Car dataset consisting of 16000 images of 196 different classes.
-    \item Dockerized the application and deployed it on an Azure compute instance and AWS Fargate.
-\end{itemize}
-\vspace*{2mm}
+% %----------------- CMM --------------------
+% \href{https://github.com/aakashb95/car-detection}{\textbf{Car make and model detection}}
+% %{\sl FastAi, PyTorch} 
+% %\hfill \url{https://github.com/aakashb95/car-detection}\\
+% \begin{itemize} \itemsep 1pt
+%     \item Built an image classification model using FastAi to detect make and model of a car based on Stanford Car dataset consisting of 16000 images of 196 different classes.
+%           % \item Model trained on the Stanford Car dataset consisting of 16000 images of 196 different classes.
+%     \item Dockerized the application and deployed it on an Azure compute instance and AWS Fargate.
+% \end{itemize}
+% \vspace*{2mm}
 %-----------------------------------
 
 %=========== WiFi Switch ============
@@ -178,9 +195,9 @@ B.E. Computer Engineering - \textit{72\%} \hfill Aug 2013 - Jul 2017\\
 \header{Languages and Technologies}
 \begin{itemize}
     \item Python
-          % \item Oracle SQL, ArangoDB
-    \item Numpy, Pandas, Scikit-learn, Pytorch, SpaCy, HuggingFace
-    \item Git, Flask, FastAPI, Streamlit, Docker
+    \item PostgreSQL, Redis, Pinecone
+    \item Langchain, Llamaindex, Instructor, HuggingFace, Ollama
+    \item Git, FastAPI, Streamlit, Docker, Terraform
 \end{itemize}
 
 %\begin{tabular}{ l l }
